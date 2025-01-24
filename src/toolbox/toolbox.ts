@@ -21,6 +21,7 @@
 
 import * as generatedToolbox from './generated/toolbox';
 import * as toolboxItems from '../toolbox/items';
+import { robotCategory } from './robot_category';
 import type { TreeDataNode } from 'antd';
 
 export function getToolboxJSON(
@@ -46,6 +47,10 @@ export function getToolboxJSON(
   contents.push.apply(
     contents,
     [
+      {
+        kind: 'sep',
+      },      
+      robotCategory,
       {
         kind: 'sep',
       },

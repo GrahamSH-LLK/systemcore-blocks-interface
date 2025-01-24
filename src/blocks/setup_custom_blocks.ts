@@ -8,6 +8,7 @@ import * as MathMinMax from './mrc_math_min_max';
 import * as MiscComment from './mrc_misc_comment';
 import * as MiscEvaluateButIgnoreResult from './mrc_misc_evaluate_but_ignore_result';
 import * as SetPythonVariable from './mrc_set_python_variable';
+import * as CallRobotMethod from './mrc_call_robot_method'
 
 const customBlocks = [
   CallPythonFunction,
@@ -18,6 +19,7 @@ const customBlocks = [
   MiscComment,
   MiscEvaluateButIgnoreResult,
   SetPythonVariable,
+  CallRobotMethod
 ];
 
 export const setup = function(forBlock: any) {
